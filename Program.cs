@@ -827,8 +827,7 @@ namespace console_shop
                             if (select == 1)
                             {
                                 item = 8;
-                                item = 80;
-                                itemName = "\t:Red Steletos\n";
+                                itemName = "\t:Rose gold broach\n";
                                 Cart += item;
                                 Cartitems += itemName;
 
