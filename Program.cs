@@ -84,7 +84,11 @@ namespace console_shop
                             select = 0;
                             while (select == 0)
                             {
-                                Console.WriteLine($"\n\n\t Your Cart total is ${Cart} With the following items\n\t{Cartitems}.\n\t To check out        -Press [1]\n\t To continue shoping -Press [2].\n\t To clear cart       -Press [3].\n");
+                                Console.WriteLine($"\n\n\t Your Cart total is ${Cart} With the following items");
+                                Console.WriteLine($"\n\t{Cartitems}.");
+                                Console.WriteLine("\n\t To check out          -Press [1]");
+                                Console.WriteLine("\n\t To continue shoping   -Press [2].");
+                                Console.WriteLine("\n\t To clear cart         -Press [3].\n");
                                 Console.WriteLine("\tPlease select from the above options.");
                                 select = int.Parse(Console.ReadLine());
 
@@ -126,8 +130,10 @@ namespace console_shop
                     default:
                         {
                             Console.Clear();
-                            Console.WriteLine("\n\t Entry invalid please try again.");
+                            Console.WriteLine("\n\t Entry invalid please try again -Press any key to continue.");
                             select = 0;
+                            Console.ReadKey();
+                            ShopFront();
                             break;
                         }
                 }      
@@ -149,7 +155,7 @@ namespace console_shop
                 Console.WriteLine("\tWhite fashion Sneakers [$100.00] -Press [2]\n");
                 Console.WriteLine("\tRed Jandels            [$10.00]  -Press [3]\n");
                 Console.WriteLine("\tRed Slippers           [$12.00]  -Press [4]\n");
-                Console.WriteLine("\tYellow Slides          [$25.00]  -Press [5]\n");
+                Console.WriteLine("\tYellow Slides          [$20.00]  -Press [5]\n");
                 Console.WriteLine("\tReturn to Shop Front             -Press [6]\n");
                 Console.WriteLine("\tPlease select from the above options");
 
@@ -224,6 +230,7 @@ namespace console_shop
                     case 2:
                         {
                             Console.Clear();
+                            select = 0;
                             Console.WriteLine("\n\tWhite sneakers\n\t These faux leather sneakers are scratch and dirt resistent, the perfect accompaniyment for any outfit\n");
                             Console.WriteLine("\t To purchase                 -Press [1]\n");
                             Console.WriteLine("\t To return to Browse Shoes   -Press [2]\n");
@@ -250,6 +257,11 @@ namespace console_shop
                                     }
                                     if (select == 2)
                                     {
+                                        ShopShoes();
+                                        break;
+                                    }
+                                    if(select == 3)
+                                    {
                                         ShopFront();
                                         break;
                                     }
@@ -259,12 +271,28 @@ namespace console_shop
                                         Console.ReadKey();
                                     }
 
-                                    break;
+                                    
                                 }
-                                break;
+                              
+                            }
+                            if (select == 2)
+                            {
+                                ShopShoes();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
                         }
+                
 
                     case 3:
                         {
@@ -312,10 +340,26 @@ namespace console_shop
                                         Console.ReadKey();
                                     }
                                 }
-                                break;
+                                
+                            }
+                            if (select == 2)
+                            {
+                                ShopShoes();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
-                        }
+                        
+                         }
                     case 4:
                         {
                             Console.Clear();
@@ -359,12 +403,29 @@ namespace console_shop
                                         Console.WriteLine("\n\tIncorrect entry please try again. Press any key to continue.");
                                         Console.ReadKey();
                                     }
-                                    break;
+                                    
                                 }
-                                break;
+                               
+                            }
+                            if (select == 2)
+                            {
+                                ShopShoes();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
-                        }
+                        
+                }
+
                     case 5:
                         {
                             Console.Clear();
@@ -409,10 +470,26 @@ namespace console_shop
                                         Console.ReadKey();
                                     }
                                 }
-                                break;
+                                
+                            }
+                            if (select == 2)
+                            {
+                                ShopShoes();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
-                        }
+                        
+                }
                     case 6:
                             {
                             ShopFront();
@@ -420,6 +497,7 @@ namespace console_shop
                         }
                     default:
                         {
+                            Console.Clear();
                             Console.WriteLine("\n\t Entry invalid please try again.");
                             select = 0;
                             break;
@@ -491,10 +569,26 @@ namespace console_shop
                                         Console.ReadKey();
                                     }
                                 }
-                                break;
+                                
+                            }
+                            if (select == 2)
+                            {
+                                ShopAccesories();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
                         }
+                
                     case 2:
                         {
                             Console.Clear();
@@ -539,9 +633,24 @@ namespace console_shop
                                         Console.WriteLine("\n\tIncorrect entry please try again. Press any key to continue.");
                                         Console.ReadKey();
                                     }
-                                    break;
+                                    
                                 }
-                                break;
+                               
+                            }
+                            if (select == 2)
+                            {
+                                ShopAccesories();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
                         }
@@ -565,7 +674,10 @@ namespace console_shop
                                 while (1==1)
                                 {
                                     Console.Clear();
-                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.\n\t To check out           Press [1]\n\t To continue shopping Press [2] ");
+                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.\n");
+                                    Console.WriteLine("\n\t To check out          -Press [1]");
+                                    Console.WriteLine("\n\t To continue shopping  -Press [2]");
+                                    Console.WriteLine("\n\n\tPlease select from the options above.");
                                     select = int.Parse(Console.ReadLine());
                                     if (select == 1)
                                     {
@@ -588,19 +700,35 @@ namespace console_shop
                                         Console.WriteLine("\n\tIncorrect entry please try again. Press any key to continue.");
                                         Console.ReadKey();
                                     }
-                                    break;
+                                    
                                 }
-                                break;
+                                
+                            }
+                            if (select == 2)
+                            {
+                                ShopAccesories();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
                         }
+
                     case 4:
                         {
                             Console.Clear();
                             Console.WriteLine("\n\tRed Simberro\n\t Vibrant hat with extra wide brim to keep you shelter from the fierce sun.\n");
-                            Console.WriteLine("\t To purchase                 -press [1]");
-                            Console.WriteLine("\t To return to Browse Accesories -press [2]");
-                            Console.WriteLine("\t To return to Shop Front     -press [3]");
+                            Console.WriteLine("\t To purchase                     -Press [1]");
+                            Console.WriteLine("\t To return to Browse Accesories  -Press [2]");
+                            Console.WriteLine("\t To return to Shop Front         -Press [3]");
                             select = int.Parse(Console.ReadLine());
 
                             if (select == 1)
@@ -612,7 +740,11 @@ namespace console_shop
 
                                 while (1==1)
                                 {
-                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.\n\t To check out           Press [1]\n\t To continue shopping Press [2] ");
+                                    Console.Clear();
+                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.");
+                                    Console.WriteLine("\n\t To check out          -Press [1]");
+                                    Console.WriteLine("\n\t To continue shopping  -Press [2]");
+                                    Console.WriteLine("\n\n\tPlease select from the options above.");
                                     select = int.Parse(Console.ReadLine());
                                     if (select == 1)
                                     {
@@ -635,9 +767,24 @@ namespace console_shop
                                         Console.WriteLine("\n\tIncorrect entry please try again. Press any key to continue.");
                                         Console.ReadKey();
                                     }
-                                    break;
+                                    
                                 }
-                                break;
+                                
+                            }
+                            if (select == 2)
+                            {
+                                ShopAccesories();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
                         }
@@ -660,7 +807,10 @@ namespace console_shop
                                 while (1==1)
                                 {
                                     Console.Clear();
-                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.\n\t To check out           Press [1]\n\t To continue shopping Press [2] ");
+                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.");
+                                    Console.WriteLine("\n\t To check out          -Press [1]");
+                                    Console.WriteLine("\n\t To continue shopping  -Press [2]");
+                                    Console.WriteLine("\n\n\tPlease select from the options above.");
                                     select = int.Parse(Console.ReadLine());
                                     if (select == 1)
                                     {
@@ -683,9 +833,24 @@ namespace console_shop
                                         Console.WriteLine("\n\tIncorrect entry please try again. Press any key to continue.");
                                         Console.ReadKey();
                                     }
-                                    break;
+                                    
                                 }
-                                break;
+                                
+                            }
+                            if (select == 2)
+                            {
+                                ShopAccesories();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
                         }
@@ -696,6 +861,7 @@ namespace console_shop
                         }
                     default:
                         {
+                            Console.Clear();
                             Console.WriteLine("\n\t Entry invalid please try again.");
                             select = 0;
                             break;
@@ -730,6 +896,7 @@ namespace console_shop
                             Console.WriteLine("\t To purchase                       -Press [1]\n");
                             Console.WriteLine("\t To return to Browse Jewelery      -Press [2]\n");
                             Console.WriteLine("\t To return to Shop Front           -Press [3]\n");
+                            Console.WriteLine("\n\n\tPlease select from the options above.");
                             select = int.Parse(Console.ReadLine());
 
                             if (select == 1)
@@ -742,7 +909,10 @@ namespace console_shop
                                 while (1==1)
                                 {
                                     Console.Clear();
-                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.\n\t To check out           Press [1]\n\t To continue shopping Press [2] ");
+                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.");
+                                    Console.WriteLine("\n\t To check out          -Press [1]");
+                                    Console.WriteLine("\n\t To continue shopping  -Press [2] ");
+                                    Console.WriteLine("\n\n\tPlease select from the options above.");
                                     select = int.Parse(Console.ReadLine());
                                     if (select == 1)
                                     {
@@ -764,10 +934,25 @@ namespace console_shop
                                         Console.WriteLine("\n\tIncorrect entry please try again. Press any key to continue.");
                                         Console.ReadKey();
                                     }
-                                    break;
+                                    
                                 }
 
-                                break;
+                                
+                            }
+                            if (select == 2)
+                            {
+                                ShopJewelery();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
                         }
@@ -793,7 +978,10 @@ namespace console_shop
                                 while (1==1)
                                 {
                                     Console.Clear();
-                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.\n\t To check out           Press [1]\n\t To continue shopping Press [2] ");
+                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.");
+                                    Console.WriteLine("\n\t To check out          -Press [1]");
+                                    Console.WriteLine("\n\t To continue shopping  -Press [2] ");
+                                    Console.WriteLine("\n\n\tPlease select from the options above.");
                                     select = int.Parse(Console.ReadLine());
                                     if (select == 1)
                                     {
@@ -816,9 +1004,24 @@ namespace console_shop
                                         Console.WriteLine("\n\tIncorrect entry please try again. Press any key to continue.");
                                         Console.ReadKey();
                                     }
-                                    break;
+                                    
                                 }
-                                break;
+                                
+                            }
+                            if (select == 2)
+                            {
+                                ShopJewelery();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
                         }
@@ -843,7 +1046,10 @@ namespace console_shop
                                 while (1==1)
                                 {
                                     Console.Clear();
-                                    Console.WriteLine($"\n\t {itemName} ${item} has been added to your cart.\n\t To check out           Press [1]\n\t To continue shopping Press [2] ");
+                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.");
+                                    Console.WriteLine("\n\t To check out            -Press [1]");
+                                    Console.WriteLine("\n\t To continue shopping    -Press [2] ");
+                                    Console.WriteLine("\n\n\tPlease select from the options above.");
                                     select = int.Parse(Console.ReadLine());
                                     if (select == 1)
                                     {
@@ -866,9 +1072,24 @@ namespace console_shop
                                         Console.WriteLine("\n\tIncorrect entry please try again. Press any key to continue.");
                                         Console.ReadKey();
                                     }
-                                    break;
+                                    
                                 }
-                                break;
+                                
+                            }
+                            if (select == 2)
+                            {
+                                ShopJewelery();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
                         }
@@ -892,7 +1113,11 @@ namespace console_shop
                                 while (1==1)
                                 {
                                     Console.Clear();
-                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.\n\t To check out           Press [1]\n\t To continue shopping Press [2] ");
+                                    Console.WriteLine($"\n\t{itemName} ${item} has been added to your cart.");
+                                    Console.WriteLine("\n\t To check out                     -Press [1]");
+                                    Console.WriteLine("\n\t To continue shopping Jewelery    -Press [2]");
+                                    Console.WriteLine("\n\t To continue shopping shop front  -Press [2]");
+                                    Console.WriteLine("\n\n\tPlease select from the options above.");
                                     select = int.Parse(Console.ReadLine());
                                     if (select == 1)
                                     {
@@ -915,9 +1140,24 @@ namespace console_shop
                                         Console.WriteLine("\n\tIncorrect entry please try again. Press any key to continue.");
                                         Console.ReadKey();
                                     }
-                                    break;
+                                    
                                 }
-                                break;
+                                
+                            }
+                            if (select == 2)
+                            {
+                                ShopJewelery();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
                         }
@@ -964,9 +1204,24 @@ namespace console_shop
                                         Console.WriteLine("\n\tIncorrect entry please try again. Press any key to continue.");
                                         Console.ReadKey();
                                     }
-                                    break;
+                                    
                                 }
-                                break;
+                                
+                            }
+                            if (select == 2)
+                            {
+                                ShopJewelery();
+                            }
+                            if (select == 3)
+                            {
+                                ShopFront();
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Console.WriteLine("\n\tIncorrect entry Please try again, Press any key to continue.");
+                                Console.ReadKey();
+                                ShopShoes();
                             }
                             break;
                         }
@@ -979,6 +1234,7 @@ namespace console_shop
 
                     default:
                         {
+                            Console.Clear();
                             Console.WriteLine("\n\t Entry invalid please try again.");
                             select = 0;
                             break;
@@ -998,13 +1254,15 @@ namespace console_shop
             {
                 Console.Clear();
                 balence = balence + TopUpAmount;
-                Console.WriteLine($"\n\tYour balence has been up dated your new balence is [${balence}].\n\t Press any key to return to the shop front");
+                Console.WriteLine($"\n\tYour balence has been up dated your new balence is [${balence}].\n\t If you would like to now checkout find your cart on the shop front menu!\n\t Press any key to return to the shop front");
                 Console.ReadKey();
                 ShopFront();
             }
             else
             {
-                Console.WriteLine("\n\tThat is an invalid TopUp amount.\n\t Press any key to try again");
+                Console.Clear();
+                Console.WriteLine($"\n\t${TopUpAmount} is an invalid Top up amount.\n\t Press any key to try again");
+                Console.ReadKey();
                 TopUp();
             }
         }
@@ -1014,6 +1272,7 @@ namespace console_shop
             Console.Clear();
             if (Cart <= balence)
             {
+                //display cart balance total and cart items, check balance is sufficent, display purchase approved message and updated balance or insufficient funds method- redirect to top up.
                 Console.WriteLine($"\n\t {username} you are purchasing the following \n{Cartitems} \n\t Toal = ${Cart}");
                 Console.WriteLine($"\n\t Transaction approved your new balance is ${balence -= Cart}.\n");
                 Console.WriteLine($"\t Have as great day {username}! Thanks for shoping with Live, Laugh, Love.\n\t Press any Key to Return to Shop Categories.");
@@ -1058,23 +1317,23 @@ namespace console_shop
                     Console.WriteLine("\t Username invalid please try again.\n\t ( Press any key to try again)");
 
                     usernameWhile = true;
-                    attempts += 1; //add 1 for atemps counter
+                    attempts += 1; //add 1 for atempts counter
 
                     //check attemps
                     if (attempts <= 3)
                     {
-                        //still attemps avaliable continue loop
+                        //still attempts avaliable continue loop
                         Console.ReadKey();
                         LoginLoop();
                         break;
                     }
                     if (attempts > 3)
                     {
-                        //force quit too many attemps
+                        //force quit too many attempts
                         Console.Clear();
                         Console.WriteLine("\tYou have used up all you attempts please contact Live, laugh, love @ livelaughlove@gmail.com \n\tto reset your login details.");
 
-                        Console.WriteLine("\tPress any key to exit the application");
+                        Console.WriteLine("\tPress any key to exit the application.");
                         Console.ReadKey();
                         Environment.Exit(0);
                     }
@@ -1094,7 +1353,8 @@ namespace console_shop
                 Console.WriteLine("\t\tWelcome to Live, Laugh, love.");
                 Console.WriteLine("\t♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥\n");
                 attempts = 0;
-                Console.WriteLine("\tPress any key to login");
+            Console.WriteLine("\tLive, laugh, love is dedicated to making your shopping experience enjoyable!\n\t We sell only the highest quality shoes, jewelery and accesories!\n");
+            Console.WriteLine("\n\tPress any key to login");
                 Console.ReadKey();
        
                 LoginLoop();
