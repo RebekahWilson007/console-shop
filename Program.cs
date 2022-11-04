@@ -167,7 +167,7 @@ namespace console_shop
                         {
                             Console.Clear();
                             select = 0;//red steleto's desciption and menu page
-                            Console.WriteLine("\n\tRed Steletos\n\t These comfy 4 inch pumps will help you dance the night away.\n\t Price: $100\n");
+                            Console.WriteLine("\n\tRed Steletos\n\t These comfy 4 inch pumps will help you dance the night away.\n\t Price: $80\n");
                             Console.WriteLine("\t To purchase                 -Press [1]\n");
                             Console.WriteLine("\t To return to Browse Shoes   -Press [2]\n");
                             Console.WriteLine("\t To return to Shop Front     -Press [3]\n");
@@ -596,7 +596,7 @@ namespace console_shop
                     case 2:
                         {//ruby red scarf display and purchase/browse loop
                             Console.Clear();
-                            Console.WriteLine("\n\tRuby Red Scarf\n\t Warming wool scarfy to protect you from any winter chills\n");
+                            Console.WriteLine("\n\tRuby Red Scarf\n\t Warming wool scarfy to protect you from any winter chills\n\t Price:$15\n");
                             Console.WriteLine("\t To purchase                     -Press [1]\n");
                             Console.WriteLine("\t To return to Browse Accesories  -Press [2]\n");
                             Console.WriteLine("\t To return to Shop Front         -Press [3]\n");
@@ -662,7 +662,7 @@ namespace console_shop
                     case 3:
                         {//red bucket hat display, add to cart or browse
                             Console.Clear();
-                            Console.WriteLine("\n\t Red Bucket hat\n\t Brilliant racing car red hat to sheid your eyes from the sun\n");
+                            Console.WriteLine("\n\t Red Bucket hat\n\t Brilliant racing car red hat to sheid your eyes from the sun.\n\tPrice: $25\n");
                             Console.WriteLine("\t To purchase                 -press [1]");
                             Console.WriteLine("\t To return to Browse Accesories -press [2]");
                             Console.WriteLine("\t To return to Shop Front     -press [3]");
@@ -796,7 +796,7 @@ namespace console_shop
                     case 5:
                         {//yelloe socks display and purchase method
                             Console.Clear();
-                            Console.WriteLine("\n\tYellow Socks\n \tComfy cosey Yellow socks that will make your feet happy\n");
+                            Console.WriteLine("\n\tYellow Socks\n \tComfy cosey Yellow socks that will make your feet happy\n\t Price:$5\n");
                             Console.WriteLine("\t To purchase                     -Press [1]\n");
                             Console.WriteLine("\t To return to Browse Accesories  -Press [2]\n");
                             Console.WriteLine("\t To return to Shop Front         -Press [3]\n");
@@ -898,7 +898,7 @@ namespace console_shop
                     case 1:
                         {//rose gold drop earrings display and purchase loop
                             Console.Clear();
-                            Console.WriteLine("\n\tRose gold Drop Earrings\n\t Simply romantic, beatifully classy\n");
+                            Console.WriteLine("\n\tRose gold Drop Earrings\n\t Simply romantic, beatifully classy\n\t Price: $15");
                             Console.WriteLine("\t To purchase                       -Press [1]\n");
                             Console.WriteLine("\t To return to Browse Jewelery      -Press [2]\n");
                             Console.WriteLine("\t To return to Shop Front           -Press [3]\n");
@@ -967,7 +967,7 @@ namespace console_shop
                     case 2:
                         {
                             Console.Clear();//rose gold necklace display and purchase menu
-                            Console.WriteLine("\n\tRose gold Necklance\n\t Simply romantic, beatifully classy\n");
+                            Console.WriteLine("\n\tRose gold Necklance\n\t Simply romantic, beatifully classy\n\t Price: $14\n");
                             Console.WriteLine("\t To purchase                       -Press [1]\n");
                             Console.WriteLine("\t To return to Browse Jewelery      -Press [2]\n");
                             Console.WriteLine("\t To return to Shop Front           -Press [3]\n");
@@ -1036,7 +1036,7 @@ namespace console_shop
                     case 3:
                         {//rose gold studs dispaly browse and purchase menu
                             Console.Clear();
-                            Console.WriteLine("\n\tRose gold Studs\n\t Simply romantic, beatifully classy\n");
+                            Console.WriteLine("\n\tRose gold Studs\n\t Simply romantic, beatifully classy\n\t Price:$10\n");
                             Console.WriteLine("\t To purchase                   -Press [1]\n");
                             Console.WriteLine("\t To return to Browse Jewelery  -Press [2]\n");
                             Console.WriteLine("\t To return to Shop Front       -Press [3]\n");
@@ -1105,7 +1105,7 @@ namespace console_shop
                     case 4:
                         {//Rose gold bangles display and purchase/browse menu
                             Console.Clear();
-                            Console.WriteLine("\n\tRose gold Bangles\n\t Simply romantic, beatifully classy\n");
+                            Console.WriteLine("\n\tRose gold Bangles\n\t Simply romantic, beatifully classy\n\t Price: $15");
                             Console.WriteLine("\t To purchase                     -Press [1]\n");
                             Console.WriteLine("\t To return to Browse Jewelery    -Press [2]\n");
                             Console.WriteLine("\t To return to Shop Front         -Press [3]\n");
@@ -1177,7 +1177,7 @@ namespace console_shop
                             //Rose gold broach browsing menu
                             Console.Clear();
                             //display description
-                            Console.WriteLine("\n\tRose gold Broach\n\t Simple oval, with a emerald gem in the centre\n");
+                            Console.WriteLine("\n\tRose gold Broach\n\t Simple oval, with a emerald gem in the centre\n\t Price: $8\n");
                             //display menu options moving forward
                             Console.WriteLine("\t To purchase                        -Press [1]\n");
                             Console.WriteLine("\t To return to Browse Jewelery       -Press [2]\n");
